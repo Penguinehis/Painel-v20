@@ -161,5 +161,23 @@ chmod +x *.sh
 
 if you follow all the tutorial correctly the panel is working 100%
 
-if any command get error plis open a issue for i can correct the tutorial 
+If you get the error Login já existe<br>
+follow this tutorial<br>
 
+In your VPS you put in the panel<br>
+NOT THE VPS YOU HOST THE PANEL , the VPS you use in panel for VPN<br>
+First download the arquive SINC.zip<br>
+
+wget https://bigbolgames.com/sinc/sinc.zip
+
+unzip sinc.zip
+
+if need use the option A
+
+rm -R -F sinc.zip 
+
+chmod +x *.sh
+
+its resolve your problem
+
+if any command get error plis open a issue for i can correct the tutorial 
