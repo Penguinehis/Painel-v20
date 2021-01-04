@@ -1,5 +1,5 @@
 # Painel-v20
-
+<body>
 How to install CENTOS 7
 
 First need install lamp Packpage
@@ -162,4 +162,8 @@ chmod +x *.sh
 
 if you follow all the tutorial correctly the panel is working 100%
 
-if any command get error plis open a issue for i can correct the tutorial !
+if any command get error plis open a issue for i can correct the tutorial 
+
+  <p style="color:#FF0000";>Red paragraph text</p>
+
+</body>
