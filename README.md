@@ -123,7 +123,6 @@ nano clean.sh
 while true <br>
 do <br>
 /usr/bin/php /var/www/html/pages/system/cron.limpeza.php<br>
-<br>
 echo "OK $now" >> log2.txt<br>
 echo "300 segundos!" <br>
 sleep 300<br>
