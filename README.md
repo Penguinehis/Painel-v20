@@ -20,9 +20,9 @@ yum install nano
 
 service httpd reload
 
-sudo firewall-cmd --permanent --zone=public --add-service=http 
-sudo firewall-cmd --permanent --zone=public --add-service=https
-sudo firewall-cmd --reload
+sudo firewall-cmd --permanent --zone=public --add-service=http <br>
+sudo firewall-cmd --permanent --zone=public --add-service=https<br>
+sudo firewall-cmd --reload<br>
 
 yum install phpmyadmin
 
@@ -84,20 +84,20 @@ nano cron.sh
 
 paste this code below:
 
-while true 
-do 
-  /usr/bin/php /var/www/html/pages/system/cron.php
- echo "ok 1"
-  /usr/bin/php /var/www/html/pages/system/cron.ssh.php
- echo "ok 2"
-  /usr/bin/php /var/www/html/pages/system/cron.servidor.php
- echo "ok 3"
-  /bin/html.sh
-echo "Ok4 "
-  /usr/bin/php /var/www/html/pages/system/cron.online.ssh.php
-  echo "Ok 5" 
-sleep 10
-done
+while true <br>
+do <br>
+  /usr/bin/php /var/www/html/pages/system/cron.php<br>
+ echo "ok 1"<br>
+  /usr/bin/php /var/www/html/pages/system/cron.ssh.php<br>
+ echo "ok 2"<br>
+  /usr/bin/php /var/www/html/pages/system/cron.servidor.php<br>
+ echo "ok 3"<br>
+  /bin/html.sh<br>
+echo "Ok4 "<br>
+  /usr/bin/php /var/www/html/pages/system/cron.online.ssh.php<br>
+  echo "Ok 5" <br>
+sleep 10<br>
+done<br>
 
 for save use ctrl + x y
 
@@ -105,14 +105,14 @@ now for the kill (this prevent overflow in php)
 
 nano kill.sh
 
-while true 
-do 
-now=$(date +"%T")
-ps -efw | grep php | grep -v grep | awk '{print $2}' | xargs kill
-echo "OK $now" >> log.txt
-echo "300 segundos!" 
-sleep 300
-done
+while true <br>
+do <br>
+now=$(date +"%T")<br>
+ps -efw | grep php | grep -v grep | awk '{print $2}' | xargs kill<br>
+echo "OK $now" >> log.txt<br>
+echo "300 segundos!" <br>
+sleep 300<br>
+done<br>
 
 for save use ctrl + x y
 
@@ -120,14 +120,14 @@ now the clean (this remove the history of online for the BD not get much larger)
 
 nano clean.sh
 
-while true 
-do 
-/usr/bin/php /var/www/html/pages/system/cron.limpeza.php
-
-echo "OK $now" >> log2.txt
-echo "300 segundos!" 
-sleep 300
-done
+while true <br>
+do <br>
+/usr/bin/php /var/www/html/pages/system/cron.limpeza.php<br>
+<br>
+echo "OK $now" >> log2.txt<br>
+echo "300 segundos!" <br>
+sleep 300<br>
+done<br>
 
 for save use ctrl + x y
 
@@ -137,9 +137,9 @@ yum install screen -y
 
 nano start.sh
 
-screen -dmS cron ./cron.sh
-screen -dmS kill ./kill.sh
-screen -dmS clean ./clean.sh
+screen -dmS cron ./cron.sh<br>
+screen -dmS kill ./kill.sh<br>
+screen -dmS clean ./clean.sh<br>
 
 for save use ctrl + x y
 
