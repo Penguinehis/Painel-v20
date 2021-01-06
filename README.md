@@ -1,4 +1,4 @@
-Quem tiver saco de arrumar o PHP e descobrir por que ele s? est? dando Servidor OFF fique a vontade , o instalador est? 100% porem o SSH2 connect n?o quer funcionar nao sei o motivo no CentOS 7.9 PHP 5.6
+Quem tiver saco de arrumar o PHP e descobrir por que ele só está dando Servidor OFF fique a vontade , o instalador está 100% porem o SSH2 connect não quer funcionar nao sei o motivo no CentOS 7.9 PHP 5.6
 
 Comando para rodar o script centos7.sh
 
